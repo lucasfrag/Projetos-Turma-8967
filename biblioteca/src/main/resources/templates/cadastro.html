@@ -1,0 +1,13 @@
+<header th:insert="header.html" />
+<div class="container">
+    <h1>Cadastro de livros</h1>
+
+    <form th:action="@{/cadastro}" method="post">
+        <p>Nome: <input class="form-control" type="text" th:field="${livro.nome}" ></p>
+        <p>Autor: <input class="form-control" type="text" th:field="${livro.autor}" ></p>
+
+        <button  class="btn btn-primary" type="submit">Salvar</button>
+    </form>
+
+    <footer th:insert="footer.html" />
+</div>

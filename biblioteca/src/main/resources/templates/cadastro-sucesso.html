@@ -1,0 +1,11 @@
+<header th:insert="header.html" />
+
+<div class="container">
+    <h1>Livro cadastrado com sucesso!</h1>
+    
+    <p>ID: <span th:text="${livro.id}"></p>
+    <p>Nome: <span th:text="${livro.nome}"></p>
+    <p>Autor: <span th:text="${livro.autor}"></p>
+    <p>Já li: <span th:text="${livro.lido}"></p>
+</div>
+<footer th:insert="footer.html" />
